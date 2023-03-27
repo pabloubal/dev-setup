@@ -34,7 +34,7 @@ brew install --cask notion
 
 # Install developer tools
 echo "Installing Intellij..."
-brew install --cask intellij-idea
+brew install --cask intellij-idea-ce
 echo "Installing Arduino..."
 brew install --cask arduino
 echo "Installing VSCode..."
