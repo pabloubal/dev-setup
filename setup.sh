@@ -15,46 +15,46 @@ source ~/.zshrc
 
 # Install browsers
 echo "Installing Brave Browser..."
-brew cask install brave-browser
+brew install --cask brave-browser
 
 # Set Brave as default browser
 open -a "Brave Browser" --args --make-default-browser
 
 # Install music apps
 echo "Installing Spotify..."
-brew cask install spotify
+brew install --cask spotify
 echo "Installing Amazon Music..."
-brew cask install amazon-music
+brew install --cask amazon-music
 
 # Install productivity apps
 echo "Installing Alfred..."
-brew cask install alfred
+brew install --cask alfred
 echo "Installing Notion..."
-brew cask install notion
+brew install --cask notion
 
 # Install developer tools
 echo "Installing Intellij..."
-brew cask install intellij-idea
+brew install --cask intellij-idea
 echo "Installing Arduino..."
-brew cask install arduino
+brew install --cask arduino
 echo "Installing VSCode..."
-brew cask install vs-code
+brew install --cask vs-code
 echo "Installing Postman..."
-brew cask install postman
+brew install --cask postman
 echo "Installing NoSQL Workbench..."
-brew cask install nosql-workbench
+brew install --cask nosql-workbench
 echo "Installing Wireshark..."
-brew cask install wireshark
+brew install --cask wireshark
 echo "Installing Docker..."
-brew cask install docker
+brew install --cask docker
 echo "Installing Rectangle..."
-brew cask install rectangle
+brew install --cask rectangle
 echo "Installing AltTab..."
-brew cask install alt-tab
+brew install --cask alt-tab
 
 # Install iTerm2
 echo "Installing iTerm2..."
-brew cask install iterm2
+brew install --cask iterm2
 
 # Set iTerm2 as default terminal
 echo "Setting iTerm2 as default..."
