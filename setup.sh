@@ -51,6 +51,18 @@ echo "Installing Rectangle..."
 brew install --cask rectangle
 echo "Installing AltTab..."
 brew install --cask alt-tab
+echo "Installing Python..."
+brew install python@3.9
+echo "Installing Java..."
+brew install jenv
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+brew install openjdk@17
+sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+jenv add "$(/usr/libexec/java_home)"
+jenv global 17.0
+
 
 # Install iTerm2
 echo "Installing iTerm2..."
@@ -62,21 +74,21 @@ defaults write com.apple.Terminal "Default Window Settings" "iTerm2"
 defaults write com.apple.Terminal "Startup Window Settings" "iTerm2"
 
 # Configure iTerm2 settings
-echo "Configuring iTerm2..."
-osascript <<EOD
-tell application "iTerm"
-  tell current terminal
-    set transparency to 0.9
-    set style to full width bottom of screen
-    set background color to "0 0 0"
-    set blur radius to 12
-    set use transparency to true
-    set hotkey to {option, option}
-    set hotkey window to floating window
-    set animate showing and hiding to true
-  end tell
-end tell
-EOD
+# Missing how to configure this
+# osascript <<EOD
+# tell application "iTerm"
+#   tell current terminal
+#     set transparency to 0.9
+#     set style to full width bottom of screen
+#     set background color to "0 0 0"
+#     set blur radius to 12
+#     set use transparency to true
+#     set hotkey to {option, option}
+#     set hotkey window to floating window
+#     set animate showing and hiding to true
+#   end tell
+# end tell
+# EOD
 
 # Install Oh My Zsh
 echo "Installing Oh My Zsh..."
