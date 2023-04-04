@@ -62,6 +62,11 @@ brew install openjdk@17
 sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
 jenv add "$(/usr/libexec/java_home)"
 jenv global 17.0
+brew install nvm
+echo 'export NVM_DIR=~/.nvmca' >> ~/.zshrc
+echo 'source $(brew --prefix nvm)/nvm.sh' >> ~/.zshrc
+source ~/.zshrc
+nvm install node
 
 
 # Install iTerm2
